@@ -3,7 +3,7 @@
   "scripts": {
     "build": "umi build",
     "precommit": "npm run lint",
-    "lint": "tslint -c tslint.json 'src/**/*.tsx'",
+    "lint": "tslint -c tslint.json 'src/**/*.tsx?'",
     "start": "umi dev"
   },
   "dependencies": {

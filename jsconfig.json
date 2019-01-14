@@ -4,13 +4,8 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
+      "@/*": ["./src/*"]
     }
   },
-  "exclude": [
-    "dist",
-    "node_modules"
-  ]
+  "exclude": ["config", "dist", "mock", "node_modules", "tests"]
 }

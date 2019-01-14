@@ -30,11 +30,8 @@
     "airbnb",
     "eslint-config-alloy/typescript-react",
     "plugin:prettier/recommended",
-    "prettier/flowtype",
     "prettier/react",
-    "prettier/standard",
-    "prettier/unicorn",
-    "prettier/vue"
+    "prettier/typescript"
   ],
   "globals": {
     "BASE_HOST": true

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDocumentTitle from 'react-document-title';
-import { formatMessage } from 'umi/locale';
+import { formatMessage } from 'umi-plugin-react/locale';
 
 import styles from './index.less';
 

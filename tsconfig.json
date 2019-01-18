@@ -4,13 +4,13 @@
     "baseUrl": ".",
     "esModuleInterop": true,
     "importHelpers": true,
-    "jsx": "preserve",
+    "jsx": "react",
+    "lib": ["esnext", "dom"],
     "module": "esnext",
     "moduleResolution": "node",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["src/*"]
     },
-    "rootDir": "src",
     "sourceMap": true,
     "target": "esnext"
   },

@@ -1,32 +1,18 @@
 {
   "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
-    "outDir": "dist",
-    "module": "esnext",
-    "target": "es5",
-    "lib": ["es6", "dom"],
-    "sourceMap": true,
-    "allowJs": true,
+    "esModuleInterop": true,
+    "importHelpers": true,
     "jsx": "react",
+    "lib": ["esnext", "dom"],
+    "module": "esnext",
     "moduleResolution": "node",
-    "rootDir": "src",
-    "forceConsistentCasingInFileNames": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "suppressImplicitAnyIndexErrors": true,
-    "noUnusedLocals": true,
     "paths": {
-      "components": ["components"]
+      "@/*": ["src/*"]
     },
-    "allowSyntheticDefaultImports": true
+    "sourceMap": true,
+    "target": "esnext"
   },
-  "exclude": [
-    "dist",
-    "mock",
-    "node_modules",
-    "public",
-    "test"
-  ]
+  "exclude": ["config", "dist", "mock", "node_modules", "tests"]
 }

@@ -7,21 +7,27 @@
 Install dependencies.
 
 ```bash
-$ npm i
+yarn
 ```
 
 Start dev server.
 
 ```bash
-$ npm start
+yarn start
 ```
 
-Build.
+Build for production with minification.
 
 ```bash
-$ npm run build
+yarn build
 ```
 
-# License
+Build for development with minification.
+
+```bash
+yarn dev
+```
+
+## License
 
 MIT

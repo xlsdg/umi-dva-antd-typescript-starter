@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDocumentTitle from 'react-document-title';
 import { formatMessage } from 'umi-plugin-react/locale';
 
-import styles from './index.less';
+import styles from './404.less';
 
 export default () => (
-  <ReactDocumentTitle title={formatMessage({ id: 'page.index.title' })}>
-    <div className={styles.main}>Index</div>
+  <ReactDocumentTitle title={formatMessage({ id: 'page.404.title' })}>
+    <div className={styles.main}>404</div>
   </ReactDocumentTitle>
 );

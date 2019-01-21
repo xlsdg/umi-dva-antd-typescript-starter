@@ -14,7 +14,7 @@ const plugins = [
     dll: false,
     dva: false,
     dynamicImport: {
-      loadingComponent: './components/Loading/index',
+      loadingComponent: './components/PageLoading/index.tsx',
     },
     fastClick: false,
     hardSource: false,

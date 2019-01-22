@@ -1,33 +1,44 @@
 import LodashWebpackPlugin from 'lodash-webpack-plugin';
 
 const chainWebpack = config => {
-  config.plugin('lodash').use(LodashWebpackPlugin, [{
-    collections: true,
-    paths: true,
-  }]);
+  config.plugin('lodash').use(LodashWebpackPlugin, [
+    {
+      collections: true,
+      paths: true,
+    },
+  ]);
 };
 
 const plugins = [
   // ref: https://umijs.org/plugin/umi-plugin-react.html
-  ['umi-plugin-react', {
-    antd: true,
-    dll: false,
-    dva: false,
-    dynamicImport: {
-      loadingComponent: './components/PageLoading/index.tsx',
-    },
-    fastClick: false,
-    hardSource: false,
-    hd: false,
-    locale: {
+  [
+    'umi-plugin-react',
+    {
       antd: true,
-      baseNavigator: true,
-      default: 'zh-CN',
+      dll: false,
+      dva: {
+        hmr: true,
+      },
+      dynamicImport: {
+        loadingComponent: './components/PageLoading/index.tsx',
+      },
+      fastClick: false,
+      hardSource: false,
+      hd: false,
+      locale: {
+        antd: true,
+        baseNavigator: true,
+        default: 'zh-CN',
+      },
+      routes: {
+        exclude: [],
+      },
+      title: {
+        defaultTitle: 'ANTD',
+        useLocale: true,
+      },
     },
-    routes: {
-      exclude: []
-    },
-  }],
+  ],
 ];
 
 // ref: https://umijs.org/config/
@@ -41,6 +52,7 @@ export default {
   theme: {
     '@brand-primary': '#0078ff',
   },
+  treeShaking: true,
   targets: {
     ie: 11,
   },

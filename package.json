@@ -6,7 +6,7 @@
     "lodash": "^4.17.11",
     "moment": "^2.24.0",
     "path-to-regexp": "^3.0.0",
-    "prop-types": "^15.7.0",
+    "prop-types": "^15.7.1",
     "qs": "^6.6.0",
     "react": "^16.8.1",
     "react-document-title": "^2.0.3",
@@ -14,10 +14,10 @@
     "react-loading": "^2.0.3"
   },
   "devDependencies": {
-    "@commitlint/cli": "^7.5.1",
+    "@commitlint/cli": "^7.5.2",
     "@commitlint/config-conventional": "^7.5.0",
     "@types/lodash": "^4.14.120",
-    "@types/node": "^10.12.24",
+    "@types/node": "^10.12.25",
     "@types/qs": "^6.5.1",
     "@types/react": "^16.8.2",
     "@types/react-document-title": "^2.0.3",

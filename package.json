@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "antd": "^3.13.4",
+    "antd": "^3.13.5",
     "axios": "^0.18.0",
     "dva": "^2.4.1",
     "lodash": "^4.17.11",
@@ -20,8 +20,8 @@
     "@types/react": "^16.8.3",
     "@types/react-document-title": "^2.0.3",
     "@types/react-dom": "^16.8.2",
-    "@typescript-eslint/eslint-plugin": "^1.3.0",
-    "@typescript-eslint/parser": "^1.3.0",
+    "@typescript-eslint/eslint-plugin": "^1.4.0",
+    "@typescript-eslint/parser": "^1.4.0",
     "babel-eslint": "^10.0.1",
     "babel-plugin-lodash": "^3.3.4",
     "babel-plugin-transform-remove-console": "^6.9.4",
@@ -48,7 +48,7 @@
     "tslint-plugin-prettier": "^2.0.1",
     "tslint-react": "^3.6.0",
     "typescript": "^3.3.3",
-    "umi": "^2.5.1",
+    "umi": "^2.5.3",
     "umi-plugin-react": "^1.5.1"
   },
   "engines": {

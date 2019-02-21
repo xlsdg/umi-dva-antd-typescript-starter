@@ -17,7 +17,7 @@
     "@types/lodash": "^4.14.121",
     "@types/node": "^10.12.26",
     "@types/qs": "^6.5.1",
-    "@types/react": "^16.8.3",
+    "@types/react": "^16.8.4",
     "@types/react-document-title": "^2.0.3",
     "@types/react-dom": "^16.8.2",
     "@typescript-eslint/eslint-plugin": "^1.4.0",
@@ -48,8 +48,8 @@
     "tslint-plugin-prettier": "^2.0.1",
     "tslint-react": "^3.6.0",
     "typescript": "^3.3.3",
-    "umi": "^2.5.3",
-    "umi-plugin-react": "^1.5.1"
+    "umi": "^2.5.4",
+    "umi-plugin-react": "^1.5.2"
   },
   "engines": {
     "node": ">=8.0.0"

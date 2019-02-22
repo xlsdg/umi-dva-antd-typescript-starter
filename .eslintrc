@@ -44,7 +44,7 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "plugins": ["prettier"],
+  "plugins": ["react-hooks", "prettier"],
   "root": true,
   "rules": {
     "import/no-extraneous-dependencies": [
@@ -69,6 +69,7 @@
     ],
     "jsx-a11y/click-events-have-key-events": "off",
     "jsx-a11y/no-noninteractive-element-interactions": "off",
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "react-hooks/rules-of-hooks": "error"
   }
 }

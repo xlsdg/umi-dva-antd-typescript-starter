@@ -14,8 +14,8 @@
     "@commitlint/config-conventional": "^7.5.0",
     "@types/lodash": "^4.14.123",
     "@types/node": "^10.14.4",
-    "@types/qs": "^6.5.2",
-    "@types/react": "^16.8.12",
+    "@types/qs": "^6.5.3",
+    "@types/react": "^16.8.13",
     "@types/react-dom": "^16.8.3",
     "@typescript-eslint/eslint-plugin": "^1.6.0",
     "@typescript-eslint/parser": "^1.6.0",
@@ -38,14 +38,14 @@
     "stylelint": "^9.10.1",
     "stylelint-config-prettier": "^5.0.0",
     "stylelint-config-standard": "^18.2.0",
-    "stylelint-order": "^2.1.0",
+    "stylelint-order": "^2.2.1",
     "tslint": "^5.15.0",
     "tslint-config-prettier": "^1.18.0",
     "tslint-plugin-prettier": "^2.0.1",
     "tslint-react": "^4.0.0",
-    "typescript": "^3.4.2",
-    "umi": "^2.6.11",
-    "umi-plugin-react": "^1.7.2"
+    "typescript": "^3.4.3",
+    "umi": "^2.6.12",
+    "umi-plugin-react": "^1.7.3"
   },
   "engines": {
     "node": ">=8.0.0"

@@ -14,7 +14,7 @@
     "@commitlint/cli": "^8.0.0",
     "@commitlint/config-conventional": "^8.0.0",
     "@types/lodash": "^4.14.134",
-    "@types/node": "^12.0.7",
+    "@types/node": "^12.0.8",
     "@types/qs": "^6.5.3",
     "@types/react": "^16.8.19",
     "@types/react-dom": "^16.8.4",
@@ -24,12 +24,12 @@
     "babel-plugin-lodash": "^3.3.4",
     "cross-env": "^5.2.0",
     "eslint": "^5.16.0",
-    "eslint-config-alloy": "^2.0.2",
+    "eslint-config-alloy": "^2.0.4",
     "eslint-config-prettier": "^4.3.0",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.13.0",
     "eslint-plugin-react-hooks": "^1.6.0",
-    "husky": "^2.4.0",
+    "husky": "^2.4.1",
     "lint-staged": "^8.2.0",
     "lodash-webpack-plugin": "^0.11.5",
     "prettier": "^1.18.2",
@@ -42,8 +42,8 @@
     "tslint-plugin-prettier": "^2.0.1",
     "tslint-react": "^4.0.0",
     "typescript": "^3.5.1",
-    "umi": "^2.7.3",
-    "umi-plugin-react": "^1.8.2"
+    "umi": "^2.7.5",
+    "umi-plugin-react": "^1.8.3"
   },
   "engines": {
     "node": ">=8.0.0"

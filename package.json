@@ -18,8 +18,8 @@
     "@types/qs": "^6.5.3",
     "@types/react": "^16.8.23",
     "@types/react-dom": "^16.8.4",
-    "@typescript-eslint/eslint-plugin": "^1.11.0",
-    "@typescript-eslint/parser": "^1.11.0",
+    "@typescript-eslint/eslint-plugin": "^1.12.0",
+    "@typescript-eslint/parser": "^1.12.0",
     "babel-eslint": "^10.0.2",
     "babel-plugin-lodash": "^3.3.4",
     "cross-env": "^5.2.0",
@@ -36,14 +36,14 @@
     "stylelint": "^10.1.0",
     "stylelint-config-prettier": "^5.2.0",
     "stylelint-config-standard": "^18.3.0",
-    "stylelint-order": "^3.0.0",
+    "stylelint-order": "^3.0.1",
     "tslint": "^5.18.0",
     "tslint-config-prettier": "^1.18.0",
     "tslint-plugin-prettier": "^2.0.1",
     "tslint-react": "^4.0.0",
     "typescript": "^3.5.3",
-    "umi": "^2.8.10",
-    "umi-plugin-react": "^1.9.9"
+    "umi": "^2.8.11",
+    "umi-plugin-react": "^1.9.10"
   },
   "engines": {
     "node": ">=8.0.0"

@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "antd": "^3.20.5",
+    "antd": "^3.20.7",
     "axios": "^0.19.0",
     "lodash": "^4.17.15",
     "moment": "^2.24.0",
@@ -30,7 +30,7 @@
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^1.6.1",
     "husky": "^3.0.1",
-    "lint-staged": "^9.2.0",
+    "lint-staged": "^9.2.1",
     "lodash-webpack-plugin": "^0.11.5",
     "prettier": "^1.18.2",
     "stylelint": "^10.1.0",
@@ -42,8 +42,8 @@
     "tslint-plugin-prettier": "^2.0.1",
     "tslint-react": "^4.0.0",
     "typescript": "^3.5.3",
-    "umi": "^2.8.13",
-    "umi-plugin-react": "^1.9.12"
+    "umi": "^2.8.15",
+    "umi-plugin-react": "^1.9.13"
   },
   "engines": {
     "node": ">=8.0.0"

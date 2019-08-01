@@ -29,7 +29,7 @@
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^1.6.1",
-    "husky": "^3.0.1",
+    "husky": "^3.0.2",
     "lint-staged": "^9.2.1",
     "lodash-webpack-plugin": "^0.11.5",
     "prettier": "^1.18.2",
@@ -42,8 +42,8 @@
     "tslint-plugin-prettier": "^2.0.1",
     "tslint-react": "^4.0.0",
     "typescript": "^3.5.3",
-    "umi": "^2.8.15",
-    "umi-plugin-react": "^1.9.13"
+    "umi": "^2.8.16",
+    "umi-plugin-react": "^1.9.14"
   },
   "engines": {
     "node": ">=8.0.0"

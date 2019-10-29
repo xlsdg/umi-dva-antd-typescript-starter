@@ -36,10 +36,10 @@ const plugins = [
         loadingComponent: './components/PageLoading/index.jsx',
         // level: ,
       },
-      dll: {
-        include: [],
-        exclude: [],
-      },
+      // dll: {
+      //   include: [],
+      //   exclude: [],
+      // },
       // pwa: {
       //   manifestOptions: {
       //     srcPath: 'src/manifest.json',

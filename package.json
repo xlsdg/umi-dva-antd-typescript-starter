@@ -16,7 +16,7 @@
     "@types/lodash": "^4.14.149",
     "@types/node": "^12.12.14",
     "@types/qs": "^6.9.0",
-    "@types/react": "^16.9.14",
+    "@types/react": "^16.9.15",
     "@types/react-dom": "^16.9.4",
     "@typescript-eslint/eslint-plugin": "^2.10.0",
     "@typescript-eslint/parser": "^2.10.0",
@@ -34,7 +34,7 @@
     "lodash-webpack-plugin": "^0.11.5",
     "prettier": "^1.19.1",
     "stylelint": "^12.0.0",
-    "stylelint-config-prettier": "^7.0.0",
+    "stylelint-config-prettier": "^8.0.0",
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-order": "^3.1.1",
     "stylelint-prettier": "^1.1.1",
@@ -42,9 +42,9 @@
     "tslint-config-prettier": "^1.18.0",
     "tslint-plugin-prettier": "^2.0.1",
     "tslint-react": "^4.1.0",
-    "typescript": "^3.7.2",
-    "umi": "^2.12.3",
-    "umi-plugin-react": "^1.14.6"
+    "typescript": "^3.7.3",
+    "umi": "^2.12.5",
+    "umi-plugin-react": "^1.14.8"
   },
   "engines": {
     "node": ">=8.0.0"

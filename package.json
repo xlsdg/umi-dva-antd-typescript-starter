@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "antd": "^3.26.7",
+    "antd": "^3.26.8",
     "axios": "^0.19.2",
     "lodash": "^4.17.15",
     "moment": "^2.24.0",
@@ -18,8 +18,8 @@
     "@types/qs": "^6.9.0",
     "@types/react": "^16.9.19",
     "@types/react-dom": "^16.9.5",
-    "@typescript-eslint/eslint-plugin": "^2.18.0",
-    "@typescript-eslint/parser": "^2.18.0",
+    "@typescript-eslint/eslint-plugin": "^2.19.0",
+    "@typescript-eslint/parser": "^2.19.0",
     "babel-eslint": "^10.0.3",
     "babel-plugin-lodash": "^3.3.4",
     "cross-env": "^7.0.0",
@@ -27,7 +27,7 @@
     "eslint-config-alloy": "^3.5.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-prettier": "^3.1.2",
-    "eslint-plugin-react": "^7.18.1",
+    "eslint-plugin-react": "^7.18.3",
     "eslint-plugin-react-hooks": "^2.3.0",
     "husky": "^4.2.1",
     "lint-staged": "^10.0.7",

@@ -42,12 +42,7 @@
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-order": "^4.1.0",
-    "stylelint-prettier": "^1.1.2",
-    "tslint": "^6.1.3",
-    "tslint-config-prettier": "^1.18.0",
-    "tslint-plugin-prettier": "^2.3.0",
-    "tslint-react": "^5.0.0",
-    "typescript": "^4.1.2"
+    "stylelint-prettier": "^1.1.2"
   },
   "engines": {
     "node": ">=10.13.0"
@@ -64,8 +59,7 @@
     "prettier": "prettier --write './src/**/*.{js,jsx,ts,tsx,less,scss,css}'",
     "start": "umi dev",
     "test": "umi-test",
-    "test:coverage": "umi-test --coverage",
-    "tslint": "tslint --fix 'src/**/*.ts*'"
+    "test:coverage": "umi-test --coverage"
   },
   "version": "0.1.0"
 }

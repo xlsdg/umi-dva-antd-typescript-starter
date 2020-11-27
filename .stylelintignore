@@ -11,7 +11,9 @@
 # umi
 .umi
 .umi-production
+.umi-test
 
-# IDE
+# ide
 .idea
 .vscode
+.history

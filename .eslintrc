@@ -32,10 +32,11 @@
     "alloy/typescript",
     "plugin:prettier/recommended",
     "prettier/react",
-    "prettier/typescript"
+    "prettier/@typescript-eslint"
   ],
   "globals": {
-    "BASE_HOST": true
+    "BASE_HOST": true,
+    "AUTH_HOST": true
   },
   "parser": "babel-eslint",
   "parserOptions": {
@@ -50,6 +51,19 @@
   "rules": {
     "prettier/prettier": "error",
     "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn"
+    "react-hooks/exhaustive-deps": "warn",
+    "react/forbid-component-props": [
+      "error",
+      {
+        "forbid": ["id", "style"]
+      }
+    ],
+    "react/forbid-dom-props": [
+      "error",
+      {
+        "forbid": ["id", "style"]
+      }
+    ],
+    "no-invalid-this": "off"
   }
 }

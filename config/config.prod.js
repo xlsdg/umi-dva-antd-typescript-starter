@@ -1,24 +1,25 @@
-const CDN_HOST = '';
-const BASE_PATH = '/';
+import { defineConfig } from 'umi';
+
+import Constant, { CDN_HOST, BASE_PATH } from './constant.prod';
+
 const PUBLIC_PATH = `${CDN_HOST}${BASE_PATH}`;
 
 const define = {
-  BASE_HOST: 'https://api.baidu.com',
-  // BASE_HOST: 'http://127.0.0.1:8080',
+  'process.env.UMI_ENV': 'prod',
+  ...Constant,
 };
 
 // https://umijs.org/config/
-export default {
+export default defineConfig({
   base: BASE_PATH,
-  publicPath: PUBLIC_PATH,
-  cssPublicPath: PUBLIC_PATH,
-
+  cssLoader: {
+    modules: {
+      localIdentName: '[hash:base64:8]',
+    },
+  },
   define,
-  // extraBabelPlugins: [],
   manifest: {
     basePath: PUBLIC_PATH,
   },
-  cssLoaderOptions: {
-    localIdentName: '[hash:base64:8]',
-  },
-};
+  publicPath: PUBLIC_PATH,
+});

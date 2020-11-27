@@ -1,4 +1,8 @@
+import { defineConfig } from 'umi';
 import LodashWebpackPlugin from 'lodash-webpack-plugin';
+
+import Constant from './constant';
+import Theme from './theme';
 
 const chainWebpack = config => {
   config.plugin('lodash').use(LodashWebpackPlugin, [
@@ -9,121 +13,103 @@ const chainWebpack = config => {
   ]);
 };
 
-// https://umijs.org/plugin/umi-plugin-react.html
-const plugins = [
-  [
-    'umi-plugin-react',
-    {
-      dva: {
-        immer: true,
-        dynamicImport: true,
-        hmr: true,
-      },
-      antd: true,
-      routes: {
-        exclude: [],
-        // update: () => {},
-      },
-      locale: {
-        default: 'zh-CN',
-        baseNavigator: false,
-        antd: true,
-        baseSeparator: '-',
-      },
-      library: 'react',
-      dynamicImport: {
-        // webpackChunkName: true,
-        loadingComponent: './components/PageLoading/index.jsx',
-        // level: ,
-      },
-      // dll: {
-      //   include: [],
-      //   exclude: [],
-      // },
-      // pwa: {
-      //   manifestOptions: {
-      //     srcPath: 'src/manifest.json',
-      //   },
-      //   workboxPluginMode: 'GenerateSW', // 'InjectManifest'
-      //   workboxOptions: {
-      //     swSrc: 'src/manifest.json',
-      //     swDest: 'service-worker.js',
-      //     importWorkboxFrom: 'local',
-      //   }
-      // },
-      hd: false,
-      fastClick: false,
-      title: {
-        defaultTitle: 'ANTD',
-        // format: '{parent}{separator}{current}',
-        // separator: ' - ',
-        useLocale: true,
-      },
-      // chunks: ['umi'],
-      // scripts: [{}, ''],
-      // headScripts: [{}, ''],
-      // metas: [{}],
-      // links: [{}],
-    },
-  ],
-];
+// https://umijs.org/zh-CN/plugins/api
+const plugins = {
+  antd: {
+    dark: false,
+    compact: false,
+  },
+  dva: {
+    // skipModelValidate: false,
+    // extraModels: [],
+    immer: true,
+    hmr: true,
+  },
+  locale: {
+    baseSeparator: '-',
+    // default: 'zh-CN',
+    antd: true,
+    title: true,
+    baseNavigator: true,
+  },
+};
 
 const define = {
   'process.env.NODE_ENV': process.env.NODE_ENV,
-  'process.env.UMI_ENV': process.env.UMI_ENV,
+  ...Constant,
 };
 
 // https://umijs.org/config/
-export default {
-  plugins,
-  // routes: [],
-  // disableRedirectHoist: false,
-  history: 'browser', // browser、hash、memory
-  outputPath: './dist',
+export default defineConfig({
+  // alias: {},
+  // analyze: {},
+  // autoprefixer: { flexbox: 'no-2009' },
   // base: '/',
-  // publicPath: '/',
-  runtimePublicPath: false,
-  // cssPublicPath: '/',
-  mountElementId: 'root',
-  minimizer: 'terserjs', // uglifyjs, terserjs
-  hash: true,
-  targets: { ie: 11, chrome: 49, firefox: 45, safari: 10, edge: 13, ios: 10 },
-  // context: {},
+  chainWebpack,
+  // chunks: ['umi'],
+  cssLoader: {
+    modules: {
+      getLocalIdent: (context, localIdentName, localName, options) => {
+        if (context.resourcePath.includes('node_modules') || context.resourcePath.includes('global.less')) {
+          return localName;
+        }
+      },
+    },
+  },
+  // cssModulesTypescriptLoader: ,
+  // cssnano: {},
+  // copy: [],
+  define,
+  // devServer: {},
+  // devtool: ,
+  dynamicImport: {
+    // loading: '@/components/PageLoading',
+  },
   // exportStatic: { htmlSuffix: false, dynamicRoot: false },
-  // singular: false,
+  // externals: {},
+  extraBabelPlugins: ['lodash'],
+  // extraBabelPresets: [],
+  // extraPostCSSPlugins: [],
+  // favicon: '/assets/favicon.ico',
+  // forkTSCheker: {},
+  hash: true,
+  // headScripts: [{}, ''],
+  history: { type: 'browser' }, // browser、hash、memory
+  ignoreMomentLocale: true,
+  // inlineLimit: 10000,
+  // lessLoader: {},
+  // links: [{}],
+  // manifest: {
+  //   fileName: 'manifest.json',
+  //   publicPath: ,
+  //   basePath: '/',
+  // },
+  // metas: [{}],
   // mock: {
   //   exclude: [],
   // },
-  // block: {
-  //   defaultGitUrl: 'https://github.com/ant-design/pro-blocks',
-  // },
-  ssr: false,
-
-  chainWebpack,
-  theme: {
-    // https://github.com/ant-design/ant-design/blob/master/components/style/themes/default.less
-    '@primary-color': '#0078ff',
-  },
-  treeShaking: true,
-  define,
-  // externals: {},
-  // alias: {},
-  // devServer: {},
-  // devtool: {},
-  // disableCSSModules: false,
-  // disableCSSSourceMap: false,
-  // extraBabelPresets: [],
-  extraBabelPlugins: ['lodash'],
-  // extraBabelIncludes: [],
-  // extraPostCSSPlugins: [],
-  // cssModulesExcludes: [],
-  // generateCssModulesTypings: true,
-  // copy: [],
+  // mountElementId: 'root',
+  // mpa: {},
+  nodeModulesTransform: { type: 'none' },
+  // outputPath: 'dist',
+  // plugins: [],
+  // polyfill: { imports: [] },
+  // postcssLoader: {},
+  // presets: [],
   // proxy: {},
-  // sass: {},
-  ignoreMomentLocale: true,
-  // lessLoaderOptions: {},
-  // cssLoaderOptions: {},
-  // autoprefixer: { browsers: DEFAULT_BROWSERS, flexbox: true },
-  // uglifyJSOptions: {},
-};
+  // publicPath: '/',
+  // routes: [],
+  // runtimeHistory: {},
+  // runtimePublicPath: false,
+  // scripts: [{}, ''],
+  // singular: false,
+  // ssr: false,
+  // styleLoader: {},
+  // styles: [],
+  targets: { ie: 11, chrome: 49, firefox: 45, safari: 10, edge: 13, ios: 10 },
+  // terserOptions: {},
+  theme: Theme,
+  title: 'ANTD',
+
+  ...plugins,
+});

@@ -1,19 +1,11 @@
-/**
- * title: page.index.title
- */
 import React from 'react';
-// import { formatMessage } from 'umi-plugin-react/locale';
 
 import styles from './index.less';
 
-Index.propTypes = {};
-
-Index.defaultProps = {};
-
-function Index(props) {
+export default () => {
   return (
-    <div className={styles.container}>Index</div>
+    <div>
+      <h1 className={styles.title}>Page index</h1>
+    </div>
   );
-}
-
-export default Index;
+};

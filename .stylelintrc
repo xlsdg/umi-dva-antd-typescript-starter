@@ -1,56 +1,7 @@
 {
-  "extends": ["stylelint-config-recommended", "stylelint-prettier/recommended"],
+  "extends": ["stylelint-config-standard", "stylelint-prettier/recommended"],
   "plugins": ["stylelint-order"],
   "rules": {
-    "at-rule-no-unknown": null,
-    "at-rule-no-vendor-prefix": true,
-    "color-named": "never",
-    "declaration-empty-line-before": null,
-    "font-family-name-quotes": "always-where-recommended",
-    "font-weight-notation": [
-      "numeric",
-      {
-        "ignore": ["relative"]
-      }
-    ],
-    "function-url-no-scheme-relative": true,
-    "function-url-quotes": "always",
-    "length-zero-no-unit": true,
-    "media-feature-name-no-unknown": [
-      true,
-      {
-        "ignoreMediaFeatureNames": ["prefers-reduced-motion"]
-      }
-    ],
-    "media-feature-name-no-vendor-prefix": true,
-    "media-feature-range-operator-space-after": "always",
-    "media-feature-range-operator-space-before": "never",
-    "no-descending-specificity": null,
-    "no-duplicate-selectors": true,
-    "property-blacklist": ["transition"],
-    "property-no-vendor-prefix": true,
-    "selector-class-pattern": "^[a-z][a-zA-Z0-9]+$",
-    "selector-list-comma-newline-after": "always",
-    "selector-list-comma-newline-before": "never-multi-line",
-    "selector-list-comma-space-after": "always-single-line",
-    "selector-list-comma-space-before": "never-single-line",
-    "selector-max-attribute": 2,
-    "selector-max-class": 4,
-    "selector-max-combinators": 4,
-    "selector-max-compound-selectors": 4,
-    "selector-max-empty-lines": 1,
-    "selector-max-id": 0,
-    "selector-max-specificity": null,
-    "selector-max-type": 2,
-    "selector-max-universal": 1,
-    "selector-no-qualifying-type": true,
-    "selector-no-vendor-prefix": true,
-    "shorthand-property-no-redundant-values": true,
-    "value-keyword-case": "lower",
-    "value-no-vendor-prefix": true,
-
-    "max-nesting-depth": [2, { "ignore": ["pseudo-classes"] }],
-    "selector-pseudo-class-no-unknown": [true, { "ignorePseudoClasses": ["global"] }],
     "order/properties-order": [
       "position",
       "top",

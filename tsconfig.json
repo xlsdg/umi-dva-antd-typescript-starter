@@ -15,5 +15,6 @@
     "strict": true,
     "target": "esnext"
   },
-  "include": ["mock/**/*", "src/**/*", "config/**/*", ".umirc.ts", "typings.d.ts"]
+  "include": ["mock/**/*", "src/**/*", "config/**/*", "test/**/*"],
+  "exclude": ["node_modules", "dist", "src/.umi/**/*"]
 }

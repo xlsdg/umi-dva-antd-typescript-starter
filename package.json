@@ -25,12 +25,10 @@
     "@umijs/plugin-antd": "^0.8.0",
     "@umijs/plugin-dva": "^0.9.1",
     "@umijs/plugin-locale": "^0.10.3",
-    "babel-eslint": "^10.1.0",
     "babel-plugin-lodash": "^3.3.4",
     "cross-env": "^7.0.2",
     "eslint": "^7.14.0",
     "eslint-config-alloy": "^3.8.2",
-    "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
@@ -42,7 +40,8 @@
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-order": "^4.1.0",
-    "stylelint-prettier": "^1.1.2"
+    "stylelint-prettier": "^1.1.2",
+    "typescript": "^4.1.2"
   },
   "engines": {
     "node": ">=10.13.0"

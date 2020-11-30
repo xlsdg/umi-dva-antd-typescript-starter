@@ -1,5 +1,7 @@
 {
   "extends": ["stylelint-config-standard", "stylelint-config-recess-order", "stylelint-prettier/recommended"],
-  "plugins": [],
-  "rules": {}
+  "plugins": ["stylelint-declaration-block-no-ignored-properties"],
+  "rules": {
+    "plugin/declaration-block-no-ignored-properties": true
+  }
 }

@@ -1,1 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([[0],{QeBL:function(e,n,t){"use strict";t.r(n);var i=t("q1tI"),a=t.n(i),c=t("RKie"),l=t.n(c);n["default"]=function(){return a.a.createElement("div",null,a.a.createElement("h1",{className:l.a.title},"Page index"))}},RKie:function(e,n,t){e.exports={title:"_2cyliiB7"}}}]);

@@ -4,7 +4,7 @@ import LodashWebpackPlugin from 'lodash-webpack-plugin';
 import Constant from './constant';
 import Theme from './theme';
 
-const chainWebpack = config => {
+const chainWebpack = (config: any) => {
   config.plugin('lodash').use(LodashWebpackPlugin, [
     {
       collections: true,
@@ -49,7 +49,7 @@ export default defineConfig({
   // chunks: ['umi'],
   cssLoader: {
     modules: {
-      getLocalIdent: (context, localIdentName, localName, options) => {
+      getLocalIdent: (context: any, localIdentName: any, localName: any, options: any) => {
         if (context.resourcePath.includes('node_modules') || context.resourcePath.includes('global.less')) {
           return localName;
         }
@@ -72,6 +72,7 @@ export default defineConfig({
   // extraPostCSSPlugins: [],
   // favicon: '/assets/favicon.ico',
   // forkTSCheker: {},
+  // fastRefresh: {},
   hash: true,
   // headScripts: [{}, ''],
   history: { type: 'browser' }, // browser、hash、memory

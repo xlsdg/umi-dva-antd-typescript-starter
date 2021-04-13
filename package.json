@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "@ant-design/icons": "^4.6.2",
-    "antd": "^4.15.0",
+    "antd": "^4.15.1",
     "classnames": "^2.3.1",
     "dva": "next",
     "lodash": "^4.17.21",
@@ -22,18 +22,18 @@
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.3",
     "@types/styled-components": "^5.1.9",
-    "@typescript-eslint/eslint-plugin": "^4.20.0",
-    "@typescript-eslint/parser": "^4.20.0",
+    "@typescript-eslint/eslint-plugin": "^4.21.0",
+    "@typescript-eslint/parser": "^4.21.0",
     "@umijs/plugin-antd": "^0.9.1",
-    "@umijs/plugin-dva": "^0.11.0",
-    "@umijs/plugin-locale": "^0.10.10",
+    "@umijs/plugin-dva": "^0.11.1",
+    "@umijs/plugin-locale": "^0.11.0",
     "@umijs/plugin-qiankun": "^2.24.1",
     "babel-plugin-lodash": "^3.3.4",
     "cross-env": "^7.0.3",
-    "eslint": "^7.23.0",
+    "eslint": "^7.24.0",
     "eslint-config-alloy": "^3.10.0",
     "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-react": "^7.23.1",
+    "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^4.3.8",
     "lint-staged": "^10.5.4",
@@ -46,7 +46,7 @@
     "stylelint-config-standard": "^21.0.0",
     "stylelint-declaration-block-no-ignored-properties": "^2.3.0",
     "stylelint-prettier": "^1.2.0",
-    "typescript": "^4.2.3"
+    "typescript": "^4.2.4"
   },
   "engines": {
     "node": ">=10.13.0"
